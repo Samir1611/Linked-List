@@ -51,13 +51,13 @@ public:
     }
 
     void insertatK(int data, int pos) {
-        if(pos == 0) {
+        if(pos == 1) {
             insertatHead(data);
             return;
         }
         Node* new_node = new Node(data);
         Node* temp = head;
-        int current_pos = 0;
+        int current_pos = 1;
         while(current_pos != pos-1 ) {
             temp = temp->next;
             current_pos++;
@@ -108,13 +108,13 @@ public:
             cout << "List is empty, nothing to delete" << endl;
             return;
         }
-        if(pos == 0) {
+        if(pos == 1) {
             deleteathead();
             
             return;
         }
         Node* temp = head;
-        int current_pos = 0;
+        int current_pos = 1;
         while( current_pos != pos-1) {
             temp = temp->next;
             current_pos++;

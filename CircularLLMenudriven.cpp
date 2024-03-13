@@ -50,13 +50,13 @@ public:
     }
 
     void insertatK(int val, int pos) {
-        if(pos == 0) {
+        if(pos == 1) {
             insertatStart(val);
             return;
         }
         Node* new_node = new Node(val);
         Node* temp = head;
-        int current_pos = 0;
+        int current_pos = 1;
         while(current_pos != pos-1 ) {
             temp = temp->next;
             current_pos++;
